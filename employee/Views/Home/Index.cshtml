@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Employees>
+
+@{
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Employee List";
+}
+
+<div class="card-deck">
+
+@foreach (var employee in Model)
+{   
+    <div class="card m-3">
+        <div class="card-header">
+            <h3>@employee.Name</h3>
+        </div>
+        
+        <img class="card-img-top" src="~/images/noimage.jfif" />
+        <div class="card-footer text-center">
+            <h5>Employee ID: @employee.Id</h5>
+            <h5>Email: @employee.Email</h5>
+            <h5>Salary: @employee.Salary</h5>
+            <h5>Department: @employee.Department</h5>
+        </div>
+        <div class="card-footer text-center">
+            <a href="#" class="btn btn-primary">@Resources.View</a>
+            <a href="#" class="btn btn-primary">@Resources.Edit</a>
+            <a href="#" class="btn btn-danger">@Resources.Delete</a>
+        </div>
+    </div>
+            
+ }
+</div>
+               
