@@ -1,1 +1,7 @@
-test1
+This is keyboard for dot net core 2.2
+
+Action keyboard:
+Prop + tab tab  create property
+Ctor + tab tab  create method
+Ctr + space  implement interface
+Html +tab Tab  create html 
